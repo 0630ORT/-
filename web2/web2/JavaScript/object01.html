@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScriptのひな型</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>JavaScriptのひな型</h1>
+<p id="trial"></p>
+<script>
+ var person = {firstName:"Taro", lastName:"Yamada", age:25};
+document.getElementById("trial").innerHTML = 
+person.firstName + " is " + person.age + " year's old.";
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>

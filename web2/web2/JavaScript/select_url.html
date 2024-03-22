@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>セレクトボックス</title><link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>where to go</h1>
+<p id="demo"></p>
+<p>institution:<br>
+<form>
+<select id="institution" size="6">
+<option value="https://www.tokyo-zoo.net/zoo/ueno/">上野動物園</option>
+<option value="https://www.kahaku.go.jp/">国立科学博物館</option>
+<option value="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/">旭山動物園</option>
+<option value="https://www.edo-tokyo-museum.or.jp/">江戸東京博物館</option>
+<option value="https://www.tobuzoo.com/">東武動物公園</option>
+<option value="https://www.tobikan.jp/">東京都美術館</option>
+</select>
+</form></p>
+<script>
+var i = document.getElementById('institution');
+i.onclick = function(){window.open(i.options[i.selectedIndex].value);}
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>

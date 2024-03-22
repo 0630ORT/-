@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>slideDown</title>
+<style>
+#demo{height:30px; wibth600px; border:1px solid black; background-color:pink; text-align:center; padding:px;}
+#demo2{wibth:600px; border:1px solid black; background-color:pink; text-align:center; padding:5px; display:none;}
+</style>
+</head>
+<body>
+<div id="demo">中華料理の種類</div>
+<div id="demo2">山東料理、四川料理、広東料理、江蘇料理、福建料理、浙江料理、湖南料理、安徽料理、</div>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!-JQuery ライブラリへの参照 -->
+<script>
+$(function(){
+$("#demo").click(function(){$("#demo2").slideToggle();
+});
+});
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+</body>
+</html>

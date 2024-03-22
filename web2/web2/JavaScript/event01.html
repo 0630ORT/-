@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>イベント1</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1></h1>
+<button type="button" id="btn">button</button>
+<p id="trial">Hello World!</p>
+<script>
+document.getElementById('btn').onclick = 
+function(){
+document.getElementById('trial').innerHTML = "How are you?";
+document.getElementById('trial').style.color = "yellow";
+};
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>

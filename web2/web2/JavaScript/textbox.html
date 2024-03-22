@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>テキストボックス</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>好きなおやつは何ですか？</h1>
+<p>あなたの好きなおやつは何ですか？</p>
+<label>好きなおやつ:<input type="text" id="oyatsu">
+<button type="button" id="btn1">送信</button>
+<p id="trial"></p>
+<script>
+document.getElementById('btn1').addEventListener('click',
+function(){
+var text =""
+text = document.getElementById('oyatsu').value;
+document.getElementById('trial').innerHTML = text + "でほっと一息つきましょう　(^-^)";
+});
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>

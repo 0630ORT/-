@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>じゃんけん文字と絵</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>じゃけん文字と絵</h1>
+<button type='button' id = 'btn1'>じゃんけんポン</button>
+<p id="trial"></p>
+<p><img src= "" id="e">
+<script>
+document.getElementById('btn1').addEventListener('click',
+function(){
+var text = "";
+var image = "";
+ var r = Math.floor(Math.random()*3);
+switch(r){
+case 0:
+text ="グー";
+image = "gu.png";
+break;
+case 1:
+text ="チョキ";
+image = "choki.png";
+break;
+case 2:
+text ="パー";
+image = "pa.png";
+break;
+}
+
+
+document.getElementById('trial').innerHTML = text;
+document.getElementById('e').src = image;
+});
+
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>

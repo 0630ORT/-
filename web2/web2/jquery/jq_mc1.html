@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>JQueryのひな形2</title>
+</head>
+<body>
+<button type="button" id="btn1">段落に文字を出す</button>
+<p id="demo">Demo</p>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!-JQuery ライブラリへの参照 -->
+<script>
+$(function(){
+$("#btn1").click(function(){$("#demo").text("Hello world!")
+.css('background','red');})
+});
+
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>if文</title><link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>条件による分岐(if)</h1>
+<label>気温:<input type="text" id="temp"></label>
+<button type="button" id="btn1">送信</button>
+<p id="trial"></p>
+<script>
+document.getElementById('btn1').addEventListener('click',
+function(){
+var x = document.getElementById('temp').value;
+var text ="";
+if(x>=35){text= "猛暑日です。"}
+else if(x>=30){text= "真夏日です。"}
+else if(x>=25){text= "夏日です。"}
+else{text="今日の気温は、" + x + "度です。"}
+document.getElementById('trial').innerHTML = text;
+});
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>

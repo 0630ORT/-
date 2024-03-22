@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>テキストボックスの文字を段落に出す</title>
+</head>
+<body>
+<label>テキストボックス<input type="text" id="txt1"></label>
+<button type="button" id="btn1">テキストボックスの文字を段落に出す</button>
+<p id="demo">Demo</p>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!-JQuery ライブラリへの参照 -->
+<script>
+$(function(){
+$("#btn1").click(function(){$("#demo").text($("#txt1").val())});or$("#btn1").mouseout(function(){$("#demo").text($("#txt1").val())});
+});
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+</body>
+</html>

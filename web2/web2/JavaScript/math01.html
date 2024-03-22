@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>乱数</title><link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>乱数</h1>
+<button type='button' id = 'btn1'>0から2までの乱数を発生させる</button>
+<p id="trial"></p>
+<script>
+document.getElementById('btn1').addEventListener('click',
+function(){
+
+ var r = Math.floor(Math.random()*3);
+document.getElementById('trial').innerHTML = r;
+});
+
+</script>
+<ul>
+<li><a href="../index.html">index.html</a></li>
+</ul>
+ </div>
+</body>
+</html>
