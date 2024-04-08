@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScriptのひな型</title><link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>JavaScriptのひな型</h1>
+<p id="trial"></p>
+<script>
+ var d = new Date(document.lastModified);
+ var y = d.getFullYear();
+ var m = d.getMonth() + 1;
+ var n = d.getDate();
+ var h = d.getHours();
+ var mi = d.getMinutes();
+document.getElementById("trial").innerHTML = '最終更新日：' + y + '年' + m + '月' + n + '日';
+</script>
+<ul>
+<li><a href="../index.html">戻る</a></li>
+</ul>
+ </div>
+</body>
+</html>

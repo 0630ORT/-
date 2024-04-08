@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>世界の平均寿命</title>
+<body>
+<h1>世界の平均寿命</h1>
+    <div id="regions_div" style="width:800px;"></div>
+
+ <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['国', '平均寿命(歳)'],
+          ['Germany', 80],
+　　　　　    ['Japan', 84],
+          ['United States', 77],
+          ['Brazil', 74],
+          ['Canada', 81],
+          ['France', 82],
+          ['RU', 71],
+['China', 78],
+['Germany', 80 ],
+['Australia', 83],
+['India', 70]
+        ]);
+
+        var options ={
+};
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+        chart.draw(data, options);
+      }
+    </script>
+<ul>
+<li><a href="../index.html">戻る</a></li>
+</ul>
+  </body>
+</html>

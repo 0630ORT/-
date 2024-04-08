@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <title>Bootstrapの練習</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+<h1></h1>
+<div class="panel panel-info">
+<div class="panel-heading">じゃんけん文字と絵</div>
+<button type='button' class="btn btn-danger" id = 'btn1'>じゃんけんポン</button>
+<p id="trial"></p>
+<p><img src= "" class="img-circle" id="e">
+<script>
+document.getElementById('btn1').addEventListener('click',
+function(){
+var text = "";
+var image = "";
+ var r = Math.floor(Math.random()*3);
+switch(r){
+case 0:
+text ="グー";
+image = "gu.png";
+break;
+case 1:
+text ="チョキ";
+image = "choki.png";
+break;
+case 2:
+text ="パー";
+image = "pa.png";
+break;
+}
+
+
+document.getElementById('trial').innerHTML = text;
+document.getElementById('e').src = image;
+});
+</script>
+
+</div>
+</div>
+<ul>
+<li><a href="../index.html">戻る</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>イベント3</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1></h1>
+<button type="button" id="btn1">占う</button>
+<p id="demo">あなたの好きな動物は？</p>
+<p><img id="animal" src=""></p>
+<script>
+document.getElementById('btn1').addEventListener('click',function(){
+document.getElementById('demo').innerHTML = "ワンちゃんですね!";
+document.getElementById("animal").src = "inuinu.jpg";
+});
+</script>
+<ul>
+<li><a href="../index.html">戻る</a></li>
+</ul>
+ </div>
+</body>
+</html>

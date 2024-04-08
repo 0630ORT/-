@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScriptのひな型</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<h1>今日の日付を表示する</h1>
+<p id="demo"></p>
+<script>
+
+ var d = new Date("2002/04/19");
+
+ var y = d.getFullYear();
+ var m = d.getMonth()+1;
+ var n = d.getDate();
+
+ var hy = ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"];
+
+ var ny = d.getDay();
+
+ var wd = hy[ny];
+document.getElementById("demo").innerHTML = '私の誕生日は、' + wd + 'です。';
+</script>
+<ul>
+<li><a href="../index.html">戻る</a></li>
+</ul>
+ </div
+</body>
+</html>

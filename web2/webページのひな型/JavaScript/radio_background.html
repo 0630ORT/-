@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ラジオボタン</title>
+<link rel="stylesheet" href="../style2.css">
+<style>
+a{text-decoration:none;
+color:dimgray;
+</style>
+</head>
+<body>
+<div id="container"> 
+<p id="demo"></p>
+<form>
+<p> Color:
+<label>Red<input type="radio" name ="colors" id="red" value="red"></label>
+<label>Green<input type="radio" name ="colors" id="green" value="green"></label>
+<label>Blue<input type="radio" name ="colors" id="blue" value="blue"></label>
+<label>Lime<input type="radio" name ="colors" id="lime" value="lime"></label>
+</p>
+</form>
+<script>
+var r = document.getElementById("red");
+var g = document.getElementById("green");
+var b = document.getElementById("blue");
+var l = document.getElementById("lime");
+r.addEventListener('click',function(){
+document.body.style.backgroundColor = r.value;});
+g.addEventListener('click',function(){
+document.body.style.backgroundColor = g.value;});
+b.addEventListener('click',function(){
+document.body.style.backgroundColor = b.value;});
+l.addEventListener('click',function(){
+document.body.style.backgroundColor = l.value;});
+</script>
+<ul>
+<li><a href="../index.html">戻る</a></li>
+</ul>
+ </div>
+</body>
+</html>
